@@ -2,7 +2,9 @@ package sn.supdeco.gescompte.models;
 
 import sn.supdeco.gescompte.exceptions.CompteDebitException;
 
-public class Compte {
+import java.io.Serializable;
+
+public class Compte implements Serializable {
     private String compteId;
     private double solde;
     private Utilisateur utilisateur;
